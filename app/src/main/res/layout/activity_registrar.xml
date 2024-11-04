@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:textAlignment="center"
+    tools:context=".Registrar">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="355dp"
+        android:layout_height="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041"
+        app:srcCompat="@drawable/mengo" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="303dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="Nombre de Usuario"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress3"
+        android:layout_width="303dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="Nombre Restaurante"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress4"
+        android:layout_width="303dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="Email o Numero de Telefono"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="303dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.702" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF5722"
+        android:text="Registrar Ususario"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#000000"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="310dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="303dp"
+        android:layout_height="53dp"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        app:endIconTint="@color/black"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/listOfLocation"
+        android:layout_width="278dp"
+        android:layout_height="47dp"
+        android:inputType="none"
+        android:text="Selecciona tu ubicación"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputEditText"
+        app:layout_constraintEnd_toEndOf="@+id/textInputEditText"
+        app:layout_constraintStart_toStartOf="@+id/textInputEditText"
+        app:layout_constraintTop_toTopOf="@+id/textInputEditText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona tu Ubicación"
+        app:layout_constraintBottom_toTopOf="@+id/textInputEditText"
+        app:layout_constraintStart_toStartOf="@+id/textInputEditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
