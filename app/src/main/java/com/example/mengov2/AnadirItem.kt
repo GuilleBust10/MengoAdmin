@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.mengov2.databinding.ActivityAnadirItemBinding
-import com.example.mengov2.databinding.ActivityMainBinding
+
 
 class AnadirItem : AppCompatActivity() {
     private val binding: ActivityAnadirItemBinding by lazy {

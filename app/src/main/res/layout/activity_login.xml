@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:textAlignment="center"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/imageView5"
@@ -23,7 +23,7 @@
         app:srcCompat="@drawable/mengo" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/email"
         android:layout_width="303dp"
         android:layout_height="64dp"
         android:drawableLeft="@android:drawable/ic_dialog_email"
@@ -44,7 +44,7 @@
         app:layout_constraintVertical_bias="0.475" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/dontHaveAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FF5722"
@@ -55,13 +55,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/loginButton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.702"
         app:rippleColor="#FFFFFF" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FF5722"
@@ -70,7 +70,7 @@
         android:textColorHint="#FFFFFF"
         android:textColorLink="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/dontHaveAccount"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -78,7 +78,7 @@
         app:rippleColor="#FFFFFF" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/Password"
         android:layout_width="308dp"
         android:layout_height="45dp"
         android:drawableLeft="@android:drawable/ic_lock_idle_lock"

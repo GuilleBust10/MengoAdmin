@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:textAlignment="center"
-    tools:context=".Registrar">
+    tools:context=".SingUpActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/mengo" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/name"
         android:layout_width="303dp"
         android:layout_height="64dp"
         android:ems="10"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.408" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress3"
+        android:id="@+id/restorentName"
         android:layout_width="303dp"
         android:layout_height="64dp"
         android:ems="10"
@@ -49,7 +49,7 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress4"
+        android:id="@+id/emailOrPhone"
         android:layout_width="303dp"
         android:layout_height="64dp"
         android:ems="10"
@@ -63,7 +63,7 @@
         app:layout_constraintVertical_bias="0.605" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/password"
         android:layout_width="303dp"
         android:layout_height="64dp"
         android:ems="10"
@@ -77,7 +77,7 @@
         app:layout_constraintVertical_bias="0.702" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/createButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FF5722"
@@ -134,4 +134,5 @@
         android:text="Selecciona tu Ubicación"
         app:layout_constraintBottom_toTopOf="@+id/textInputEditText"
         app:layout_constraintStart_toStartOf="@+id/textInputEditText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
