@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.mengov2.databinding.ActivityDashboardBinding
-import com.example.mengov2.databinding.ActivityMainBinding
 
 class Dashboard : AppCompatActivity() {
     private val binding: ActivityDashboardBinding by lazy {

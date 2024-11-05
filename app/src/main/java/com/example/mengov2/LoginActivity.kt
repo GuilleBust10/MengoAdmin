@@ -5,9 +5,8 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mengov2.databinding.ActivityMainBinding
-import com.example.mengov2.databinding.ActivityDashboardBinding
 
-class MainActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     private val binding:ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
     }
@@ -17,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
         binding.button2.setOnClickListener {
-            val intent = Intent(this,Registrar::class.java)
+            val intent = Intent(this,SignUpActivity::class.java)
             startActivity(intent)
         }
         binding.button.setOnClickListener {
