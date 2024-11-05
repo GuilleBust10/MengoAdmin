@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "888271162543",
+    "project_id": "wave-of-food-411fd",
+    "storage_bucket": "wave-of-food-411fd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888271162543:android:a37c01621e6deb3fe7985a",
+        "android_client_info": {
+          "package_name": "com.example.mengov2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCayt92fycoQcHHxS9913BOAJxH84PLTU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
