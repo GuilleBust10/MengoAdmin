@@ -20,7 +20,7 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/backButton"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:contentDescription="TODO"
@@ -37,9 +37,9 @@
                 android:textSize="40sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.493"
-                app:layout_constraintStart_toEndOf="@+id/imageButton"
-                app:layout_constraintTop_toTopOf="@+id/imageButton"
+                app:layout_constraintHorizontal_bias="0.41"
+                app:layout_constraintStart_toEndOf="@+id/backButton"
+                app:layout_constraintTop_toTopOf="@+id/backButton"
                 app:layout_constraintVertical_bias="0.0" />
 
             <EditText
@@ -106,6 +106,7 @@
                     android:layout_height="110dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/persona" />
+
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -113,6 +114,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:paddingLeft="15dp"
                 android:gravity="center_vertical"
                 android:text="Descripcion Corta"
                 android:textColor="@color/black"
@@ -120,10 +124,55 @@
                 tools:layout_editor_absoluteX="16dp" />
 
             <EditText
+                android:id="@+id/editText3"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/textView10"
-                tools:layout_editor_absoluteX="51dp" />
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                android:text="Se agrega breve descripcion del producto a ingresar"
+                app:layout_constraintEnd_toEndOf="@+id/textView10"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Ingredientes"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/editText3"
+                tools:layout_editor_absoluteX="61dp" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Pan \npapas \nsalsa \npepinillo"
+                app:layout_constraintStart_toStartOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/additembutton"
+                android:layout_width="157dp"
+                android:layout_height="57dp"
+                android:background="#25D039"
+                android:text="Añadir item"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

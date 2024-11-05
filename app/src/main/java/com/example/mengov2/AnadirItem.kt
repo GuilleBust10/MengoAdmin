@@ -22,6 +22,9 @@ class AnadirItem : AppCompatActivity() {
         binding.selectimage.setOnClickListener{
             pickimage.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
         }
+        binding.backButton.setOnClickListener{
+            finish()
+        }
 
     }
     val pickimage =
