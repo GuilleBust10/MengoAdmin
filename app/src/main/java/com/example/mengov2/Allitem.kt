@@ -19,6 +19,7 @@ class Allitem : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        // Coemnzar
         setContentView(binding.root)
         val menuFoodName = listOf("Hambruguesa", "Sandwich", "momo", "item", "sandwich", "momo")
         val menuItemPrice = listOf("Q5", "Q6", "Q8", "Q9", "Q10", "Q10")
