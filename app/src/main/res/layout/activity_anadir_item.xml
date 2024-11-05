@@ -23,17 +23,18 @@
                 android:id="@+id/backButton"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:contentDescription="TODO"
+                android:layout_marginTop="28dp"
+                android:layout_marginLeft="28dp"
                 android:src="@android:drawable/ic_menu_revert"
-                tools:layout_editor_absoluteX="4dp"
-                tools:layout_editor_absoluteY="0dp"
-                tools:ignore="MissingConstraints"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Añadir Items"
+                android:text="Añadir Menú"
                 android:textSize="40sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -1,5 +1,6 @@
 package com.example.mengov2
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.PickVisualMediaRequest
@@ -22,8 +23,9 @@ class AnadirItem : AppCompatActivity() {
         binding.selectimage.setOnClickListener{
             pickimage.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
         }
-        binding.backButton.setOnClickListener{
-            finish()
+        binding.backButton.setOnClickListener {
+            val intent = Intent(this,Dashboard::class.java)
+            startActivity(intent)
         }
 
     }

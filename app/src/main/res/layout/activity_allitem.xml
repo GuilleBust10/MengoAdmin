@@ -9,14 +9,15 @@
     tools:context=".Allitem">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/returnButton"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:contentDescription="TODO"
+        android:layout_marginTop="26dp"
         android:src="@android:drawable/ic_menu_revert"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
 
     <TextView
         android:id="@+id/textView13"
@@ -28,7 +29,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/returnButton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 

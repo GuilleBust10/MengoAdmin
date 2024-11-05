@@ -22,5 +22,9 @@ class Dashboard : AppCompatActivity() {
             val intent = Intent(this,AnadirItem::class.java)
             startActivity(intent)
         }
+        binding.allItemMenu.setOnClickListener {
+            val intent = Intent(this,Allitem::class.java)
+            startActivity(intent)
+        }
     }
 }
